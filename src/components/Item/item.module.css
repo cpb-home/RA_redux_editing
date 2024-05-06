@@ -1,0 +1,9 @@
+.item {
+    font-size: 18px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.item span {
+    padding-right: 5px;
+}

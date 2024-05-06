@@ -1,0 +1,11 @@
+export const SET_TITLE_VALUE = 'SET_TITLE_VALUE';
+export const SET_PRICE_VALUE = 'SET_PRICE_VALUE';
+export const ADD_LIST_ITEM = 'ADD_LIST_ITEM';
+export const REMOVE_LIST_ITEM = 'REMOVE_LIST_ITEM';
+
+export default {
+  SET_PRICE_VALUE,
+  SET_TITLE_VALUE,
+  ADD_LIST_ITEM,
+  REMOVE_LIST_ITEM
+}
