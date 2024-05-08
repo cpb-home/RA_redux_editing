@@ -1,7 +1,7 @@
 import styles from './button.module.css'
 import { IButtonProps } from '../../models/interfaces'
 
-const Button = ({ action, handler }: IButtonProps) => {
+const Button = ({ action, handler, elId }: IButtonProps) => {
 
   let content;
   switch (action) {
@@ -19,7 +19,7 @@ const Button = ({ action, handler }: IButtonProps) => {
   }
 
   return (
-    <button className={styles['button']} type='button' onClick={handler}>
+    <button className={styles['button']} data-id={String(elId)} type='button' onClick={handler}>
       {content}
     </button>
   )
