@@ -3,6 +3,8 @@ import goodsReducer from "./goodsReducer";
 import listReducer from "./listReducer";
 import changerReducer from "./changerReducer";
 import currentItemReducer from "./currentItemReducer";
+import searchItem from "./searchtem";
+import searchReducer from "./searchReducer";
 
 const ReactReduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
 
@@ -12,7 +14,8 @@ function configureStore() {
       currentItem: goodsReducer,
       list: listReducer,
       itemChanger: changerReducer,
-      changingItem: currentItemReducer
+      changingItem: currentItemReducer,
+      searchItem: searchReducer
     }),
     compose(
       ReactReduxDevTools,

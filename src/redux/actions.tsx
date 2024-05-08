@@ -5,6 +5,7 @@ export const REMOVE_LIST_ITEM = 'REMOVE_LIST_ITEM';
 export const CHANGE_LIST_ITEM = 'CHANGE_LIST_ITEM';
 export const CHANGE_CHANGER = 'CHANGE_CHANGER';
 export const SET_CURRENT_ITEM = 'SET_CURRENT_ITEM';
+export const SEACRH_ITEM = 'SEACRH_ITEM';
 
 export default {
   SET_PRICE_VALUE,
@@ -14,4 +15,5 @@ export default {
   CHANGE_LIST_ITEM,
   CHANGE_CHANGER,
   SET_CURRENT_ITEM,
+  SEACRH_ITEM,
 }

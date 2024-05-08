@@ -26,11 +26,16 @@ export interface IChanger {
   changer: boolean;
 }
 
+export interface ISearchText {
+  searchedText: string;
+}
+
 export interface IStoreItems {
   currentItem: IItem;
   list: IItemsList;
   itemChanger: IChanger;
   changingItem: ICurrentItem;
+  searchItem: ISearchText;
 }
 
 export interface IReducers {
@@ -47,4 +52,9 @@ export interface ICurrentItem {
 export interface IActionCurrentItem {
   type: string;
   payload: ICurrentItem;
+}
+
+export interface IActionList {
+  type: string;
+  payload: number | IItem;
 }

@@ -1,21 +1,18 @@
-import { IReducers} from "../models/interfaces";
+import { IActionList} from "../models/interfaces";
 import { ADD_LIST_ITEM, CHANGE_LIST_ITEM, REMOVE_LIST_ITEM } from "./actions";
 
 const initialState = {
   listItems: [
-    {
-      titleValue: 'Какой-то товар',
-      priceValue: '25000 денег',
-    },
-    {
-      titleValue: 'Ещё какой-то товар',
-      priceValue: '15000 денег',
-    }
+    {titleValue: 'Компьютер', priceValue: '150000'},
+    {titleValue: 'Мышка', priceValue: '599'},
+    {titleValue: 'Монитор 27``', priceValue: '14900'},
+    {titleValue: 'Сетевой пилот 220 В.', priceValue: '300'},
+    {titleValue: 'Ящик пива', priceValue: '0'},
   ]
 };
 
 
-const listReducer = (state = initialState, action: IReducers) => {
+const listReducer = (state = initialState, action: IActionList) => {
   switch (action.type) {
     case ADD_LIST_ITEM:
       return {

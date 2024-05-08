@@ -12,9 +12,10 @@ import changeListItem from '../../redux/changeListItem'
 import setCurrentItem from '../../redux/setCurrentItem'
 
 const Form = () => {
-  const { titleValue, priceValue } = useSelector((state: IStoreItems) => state.currentItem);
-  const { changer } = useSelector((state: IStoreItems) => state.itemChanger);
-  const { id } = useSelector((state: IStoreItems) => state.changingItem);
+  const { titleValue, priceValue } = useSelector((state: IStoreItems) => state.currentItem) ;
+  const { changer } = useSelector((state: IStoreItems) => state.itemChanger) ;
+  const { id } = useSelector((state: IStoreItems) => state.changingItem) ;
+
   
   const dispatch = useDispatch();
   

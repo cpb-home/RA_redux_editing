@@ -36,7 +36,7 @@ const Item = ({ titleValue, priceValue, id }: IItem) => {
 
   return (
     <li className={styles['item']}>
-      <span>{titleValue + ':'}</span><span>{priceValue}</span> <Button elId={id} action='change' handler={changeHandler} /><Button action='delete' elId={id} handler={deleteHandler} />
+      <span>{titleValue + ':'}</span><span>{priceValue}</span>руб. <Button elId={id} action='change' handler={changeHandler} /><Button action='delete' elId={id} handler={deleteHandler} />
     </li>
   )
 }
